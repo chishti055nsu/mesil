@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MESIL - Materials & Energy Storage Innovation Lab</title>
+  
+  <!-- SEO & Social Sharing -->
+  <meta name="description" content="MESIL (Materials & Energy Storage Innovation Lab) pioneers next-generation all-solid-state batteries, generative AI for crystal discovery, and sustainable electrocatalytic systems.">
+  <meta name="keywords" content="solid-state batteries, energy storage, AI materials discovery, electrocatalysis, synchrotron diagnostics, MESIL">
+  <meta name="author" content="Prof. Rafsan Mallik & MESIL Team">
+  <meta property="og:title" content="MESIL - Materials & Energy Storage Innovation Lab">
+  <meta property="og:description" content="Pioneering Next-Generation Energy Architectures & Intelligent Materials.">
+  <meta property="og:type" content="website">
+  
+  <!-- Theme Avoidance Script (Zero FOUC) -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('mesil-theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2306b6d4'><path d='M15 7h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-1M6 7H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h1M23 11v2M11 7l-3 5h4l-2 5'/></svg>">
+</head>
+<body>
+
+  <!-- Ambient Animated Background Lights -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="ambient-blob-1"></div>
+    <div class="ambient-blob-2"></div>
+    <div class="ambient-grid"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="top">
+    <div class="container nav-container">
+      <a href="#top" class="brand-link" aria-label="MESIL Homepage">
+        <div class="brand-logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+        </div>
+        <div class="brand-text-group">
+          <span class="brand-acronym">MESIL</span>
+          <span class="brand-institution">Energy & Materials Lab</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#research" class="nav-item">Research</a>
+        <a href="#publications" class="nav-item">Publications</a>
+        <a href="#team" class="nav-item">Team</a>
+        <a href="#facilities" class="nav-item">Facilities</a>
+        <a href="#news" class="nav-item">News</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Theme Switcher -->
+        <button id="theme-toggle-btn" class="btn-icon-toggle" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <span id="theme-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </span>
+        </button>
+
+        <!-- GitHub Repo Quick Link -->
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm dynamic-github-link" title="View Source on GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          <span>GitHub</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="btn-mobile-menu" aria-label="Open Mobile Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer">
+    <a href="#research" class="nav-item">Research Thrusts</a>
+    <a href="#publications" class="nav-item">Publications</a>
+    <a href="#team" class="nav-item">Team Members</a>
+    <a href="#facilities" class="nav-item">Lab Facilities</a>
+    <a href="#news" class="nav-item">News & Awards</a>
+    <a href="#contact" class="nav-item">Contact & Join Us</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-pill-badge">
+          <span class="pulse-dot"></span>
+          <span>Materials & Energy Storage Innovation Lab</span>
+        </div>
+
+        <h1 class="hero-title">
+          Engineering the <span class="text-gradient">Next Frontier</span> of Clean Energy Materials.
+        </h1>
+
+        <p class="hero-subtitle">
+          We combine atomic-precision synthesis, generative AI crystal diffusion, and operando synchrotron diagnostics to invent safe solid-state batteries and decarbonization catalysts.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#research" class="btn btn-primary">
+            Explore Research
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#publications" class="btn btn-outline">
+            Browse Publications
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            Join the Lab
+          </a>
+        </div>
+
+        <!-- Live Stats Counters -->
+        <div class="stats-strip" id="hero-stats-container">
+          <!-- Dynamically populated via JS -->
+        </div>
+      </div>
+
+      <!-- Hero Visual Interactive Card -->
+      <div class="hero-visual-card">
+        <div class="hero-visual-header">
+          <div class="live-indicator">
+            <span class="pulse-dot"></span>
+            <span>MESIL LAB INTERFACE // LIVE</span>
+          </div>
+          <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--accent-cyan);">github.io ready</span>
+        </div>
+
+        <div class="orbit-canvas-container">
+          <div class="central-atom-core">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            <div class="core-pulse-ring"></div>
+          </div>
+
+          <div class="thrust-badge b-1" onclick="openThrustModal('solid-state')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Solid-State Batteries
+          </div>
+          <div class="thrust-badge b-2" onclick="openThrustModal('ai-materials')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            AI Crystal Discovery
+          </div>
+          <div class="thrust-badge b-3" onclick="openThrustModal('electrocatalysis')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            CO₂ Electrocatalysis
+          </div>
+          <div class="thrust-badge b-4" onclick="openThrustModal('operando')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Operando X-ray
+          </div>
+        </div>
+
+        <div style="font-size: 0.85rem; color: var(--text-muted); text-align: center; border-top: 1px solid var(--border-subtle); padding-top: 12px;">
+          Click any research badge to open deep-dive technical insights.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Thrusts Section -->
+  <section class="section" id="research">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Scientific Thrusts</span>
+        <h2 class="section-title">Core Research Areas</h2>
+        <p class="section-lead">
+          Our multidisciplinary lab bridges computational chemistry, nanomanufacturing, and advanced energy storage systems.
+        </p>
+      </div>
+
+      <div class="thrusts-grid" id="research-thrusts-container">
+        <!-- Rendered dynamically via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section class="section" id="publications" style="background: rgba(13, 20, 36, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Peer-Reviewed Impact</span>
+        <h2 class="section-title">Featured Publications</h2>
+        <p class="section-lead">
+          High-impact papers published in Nature Energy, Advanced Materials, ACS Nano, and premier research journals.
+        </p>
+      </div>
+
+      <!-- Controls: Search & Category Filter -->
+      <div class="publications-controls">
+        <div class="search-box-wrapper">
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="pub-search-input" class="input-search" placeholder="Search by paper title, author, keyword, journal...">
+        </div>
+
+        <div class="filter-pills" id="pub-category-filters">
+          <button class="filter-btn cat-filter-btn active" data-category="all">All Disciplines</button>
+          <button class="filter-btn cat-filter-btn" data-category="solid-state">Solid-State</button>
+          <button class="filter-btn cat-filter-btn" data-category="ai-materials">AI & Discovery</button>
+          <button class="filter-btn cat-filter-btn" data-category="electrocatalysis">Electrocatalysis</button>
+          <button class="filter-btn cat-filter-btn" data-category="operando">Operando</button>
+        </div>
+
+        <div class="filter-pills" id="pub-year-filters">
+          <button class="filter-btn year-filter-btn active" data-year="all">All Years</button>
+          <button class="filter-btn year-filter-btn" data-year="2026">2026</button>
+          <button class="filter-btn year-filter-btn" data-year="2025">2025</button>
+          <button class="filter-btn year-filter-btn" data-year="2024">2024</button>
+        </div>
+      </div>
+
+      <!-- Publications List Container -->
+      <div class="publications-list" id="publications-container">
+        <!-- Rendered dynamically via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Members Section -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Innovators</span>
+        <h2 class="section-title">Lab Members & Scholars</h2>
+        <p class="section-lead">
+          Meet the scientists, engineers, and graduate researchers pioneering sustainable energy systems.
+        </p>
+      </div>
+
+      <!-- Team Filter Tabs -->
+      <div class="team-tabs">
+        <button class="team-tab-btn active" data-role="all">All Members</button>
+        <button class="team-tab-btn" data-role="pi">Principal Investigator</button>
+        <button class="team-tab-btn" data-role="postdoc">Postdoctoral Fellows</button>
+        <button class="team-tab-btn" data-role="phd">Ph.D. Researchers</button>
+        <button class="team-tab-btn" data-role="alumni">Lab Alumni</button>
+      </div>
+
+      <!-- Team Cards Grid -->
+      <div class="team-grid" id="team-grid-container">
+        <!-- Rendered dynamically via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities & Equipment Section -->
+  <section class="section" id="facilities" style="background: rgba(13, 20, 36, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Infrastructure</span>
+        <h2 class="section-title">Equipment & Facilities</h2>
+        <p class="section-lead">
+          State-of-the-art battery fabrication gloveboxes, GPU compute clusters, and operando spectroscopy suites.
+        </p>
+      </div>
+
+      <div class="facilities-grid" id="facilities-container">
+        <!-- Rendered dynamically via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Announcements -->
+  <section class="section" id="news">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Updates</span>
+        <h2 class="section-title">Latest News & Awards</h2>
+        <p class="section-lead">
+          Recent grants, cover paper features, and community announcements from MESIL.
+        </p>
+      </div>
+
+      <div class="news-grid" id="news-container">
+        <!-- Rendered dynamically via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Join Lab Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Join MESIL or Collaborate</h2>
+        <p class="section-lead">
+          We are always looking for passionate Ph.D. students, postdocs, and industry research partners.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h3 style="font-size: 1.5rem; margin-bottom: 12px;">Laboratory Location</h3>
+          <p style="color: var(--text-muted); margin-bottom: 24px;">
+            Materials & Energy Storage Innovation Lab (MESIL)<br>
+            Department of Materials Science & Chemical Engineering<br>
+            Science & Engineering Complex, Suite 402<br>
+            500 Innovation Way
+          </p>
+
+          <div class="contact-detail-row">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-dim); text-transform: uppercase;">Direct Inquiries</div>
+              <a href="mailto:contact@mesil-lab.org" style="font-weight: 600; color: var(--accent-cyan);">contact@mesil-lab.org</a>
+            </div>
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-dim); text-transform: uppercase;">Campus Office</div>
+              <span style="font-weight: 600;">Hall of Engineering, Room 402</span>
+            </div>
+          </div>
+
+          <div class="deployment-banner">
+            <div>
+              <strong>GitHub Pages Dynamic Deployment:</strong><br>
+              Hosted seamlessly via GitHub Actions on <code id="github-repo-display">mesil.github.io</code>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-form-card">
+          <form id="lab-contact-form">
+            <div class="form-group">
+              <label class="form-label" for="form-name">Your Full Name</label>
+              <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Dr. Jane Smith" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-email">Email Address</label>
+              <input type="email" id="form-email" name="email" class="form-input" placeholder="jane.smith@institution.edu" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-inquiry">Inquiry Category</label>
+              <select id="form-inquiry" name="inquiry_type" class="form-select">
+                <option value="Prospective Ph.D. Student">Prospective Ph.D. Applicant</option>
+                <option value="Postdoctoral Fellowship">Postdoctoral Fellowship</option>
+                <option value="Academic Collaboration">Academic Collaboration</option>
+                <option value="Industry Partnership">Industry Research Partnership</option>
+                <option value="General Question">General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-message">Message / Research Interests</label>
+              <textarea id="form-message" name="message" class="form-textarea" rows="4" placeholder="Briefly describe your research background, proposed collaboration, or attach a link to your CV..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Send Inquiry
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Modal Overlay -->
+  <div class="modal-overlay" id="global-modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <button class="modal-close-btn" onclick="closeModal()" aria-label="Close dialog">&times;</button>
+      <div id="global-modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-link" style="margin-bottom: 16px;">
+            <div class="brand-logo-icon" style="width: 36px; height: 36px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <span class="brand-acronym" style="font-size: 1.25rem;">MESIL</span>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.92rem; max-width: 440px; margin-bottom: 20px;">
+            Materials & Energy Storage Innovation Lab is dedicated to pioneering safe, high-energy solid-state batteries, machine learning crystal screening, and carbon-neutral electrochemistry.
+          </p>
+          <div style="font-size: 0.85rem; color: var(--text-dim);">
+            Deployed dynamically to GitHub Pages with automated CI/CD.
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#research">Research Thrusts</a></li>
+            <li><a href="#publications">Publications & Citations</a></li>
+            <li><a href="#team">Lab Members</a></li>
+            <li><a href="#facilities">Facilities & Tools</a></li>
+            <li><a href="#news">News & Positions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="dynamic-github-link">GitHub Repository</a></li>
+            <li><a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+            <li><a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv Preprints</a></li>
+            <li><a href="#contact">Contact Lab PI</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Materials & Energy Storage Innovation Lab (MESIL). All rights reserved.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#top" style="color: var(--accent-cyan);">Back to top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
