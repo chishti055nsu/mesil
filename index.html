@@ -5,21 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MESIL - Microprocessor, Embedded Systems, and IoT Lab | North South University</title>
   
-  <!-- Institutional SEO & Meta -->
-  <meta name="description" content="Official Institutional Portal & Proposal for the Microprocessor, Embedded Systems, and IoT Lab (MESIL) at Department of ECE, North South University (NSU).">
-  <meta name="keywords" content="MESIL, North South University, ECE, Microprocessor, Embedded Systems, IoT, Blockchain, RISC-V, ARM, STM32, Smart Grid, SEPS">
-  <meta name="author" content="MESIL Founding Faculty, Department of ECE, North South University">
-  <meta property="og:title" content="MESIL - Microprocessor, Embedded Systems, and IoT Lab (NSU)">
-  <meta property="og:description" content="Department of Electrical and Computer Engineering (ECE), School of Engineering & Physical Sciences (SEPS), North South University.">
+  <meta name="description" content="Official Portal for the Microprocessor, Embedded Systems, and IoT Lab (MESIL) at Department of ECE, North South University.">
+  <meta name="keywords" content="MESIL, North South University, ECE, Microprocessor, Embedded Systems, IoT, Blockchain, SEPS">
+  <meta name="author" content="MESIL Faculty Team, North South University">
+  <meta property="og:title" content="MESIL - North South University">
+  <meta property="og:description" content="Microprocessor, Embedded Systems, and IoT Lab (MESIL), Department of ECE, North South University.">
   <meta property="og:image" content="assets/mesil-logo.png">
 
-  <!-- Immediate Theme Initializer -->
   <script>
     (function() {
       const savedTheme = localStorage.getItem('mesil-theme');
-      if (savedTheme) {
-        document.documentElement.setAttribute('data-theme', savedTheme);
-      }
+      if (savedTheme) document.documentElement.setAttribute('data-theme', savedTheme);
     })();
   </script>
 
@@ -28,23 +24,22 @@
 </head>
 <body>
 
-  <!-- Top Institutional Masthead -->
+  <!-- Masthead -->
   <div class="top-institutional-bar">
     <div class="container top-bar-flex">
       <div class="top-institution-title">
         North South University • School of Engineering & Physical Sciences (SEPS) • Department of ECE
       </div>
       <div class="top-right-meta">
-        <span>Proposal Version: July 2025</span>
-        <span id="repo-badge-text">GitHub Pages // Jamstack</span>
+        <span>Academic Research Portal</span>
       </div>
     </div>
   </div>
 
-  <!-- Main Academic Header -->
+  <!-- Header -->
   <header class="site-header" id="top">
     <div class="container header-flex">
-      <a href="#top" class="brand-wrapper">
+      <a href="index.html" class="brand-wrapper">
         <img src="assets/mesil-logo.png" alt="MESIL Official Logo" class="brand-logo-img">
         <div class="brand-meta-group">
           <span class="brand-title">MESIL</span>
@@ -52,105 +47,51 @@
         </div>
       </a>
 
-      <!-- Desktop Nav -->
-      <nav aria-label="Institutional Navigation">
+      <nav aria-label="Main Navigation">
         <ul class="nav-links">
-          <li><a href="#faculty" class="nav-link">Faculty</a></li>
-          <li><a href="#research" class="nav-link">Research & SDGs</a></li>
-          <li><a href="#projects" class="nav-link">Projects & Linkages</a></li>
-          <li><a href="#infrastructure" class="nav-link">Infrastructure & Budget</a></li>
-          <li><a href="#students" class="nav-link">Student Outcomes</a></li>
-          <li><a href="#governance" class="nav-link">Governance & Grants</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+          <li><a href="research.html" class="nav-link">Research</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="infrastructure.html" class="nav-link">Infrastructure</a></li>
+          <li><a href="students.html" class="nav-link">Student Outcomes</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
-      <!-- Controls -->
       <div class="header-controls">
-        <button id="theme-toggle-btn" class="theme-btn" aria-label="Toggle Theme">
-          Toggle View
-        </button>
-        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open Navigation Menu">
-          Menu
-        </button>
+        <button id="theme-toggle-btn" class="theme-btn" aria-label="Toggle Theme">Toggle View</button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open Navigation Menu">Menu</button>
       </div>
     </div>
 
     <!-- Mobile Drawer -->
     <div id="mobile-nav-drawer" class="mobile-drawer">
-      <a href="#faculty" class="nav-link">Faculty Leadership</a>
-      <a href="#research" class="nav-link">Research & SDGs</a>
-      <a href="#projects" class="nav-link">Projects & Linkages</a>
-      <a href="#infrastructure" class="nav-link">Infrastructure & Budget</a>
-      <a href="#students" class="nav-link">Student Outcomes</a>
-      <a href="#governance" class="nav-link">Governance & Grants</a>
-      <a href="#contact" class="nav-link">Institutional Contact</a>
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="faculty.html" class="nav-link">Faculty</a>
+      <a href="research.html" class="nav-link">Research</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="infrastructure.html" class="nav-link">Infrastructure</a>
+      <a href="students.html" class="nav-link">Student Outcomes</a>
+      <a href="contact.html" class="nav-link">Contact</a>
     </div>
   </header>
 
-  <!-- Hero Academic Banner -->
-  <section class="hero-academic-banner">
-    <div class="container hero-grid">
-      <div class="hero-text-block">
-        <span class="academic-badge">Academic Proposal & Research Center</span>
-        <h1 class="hero-doc-title">
-          Microprocessor, Embedded Systems, and IoT Lab (MESIL)
-        </h1>
-        <div class="hero-dept-subtitle">
-          Department of Electrical and Computer Engineering (ECE)<br>
-          School of Engineering & Physical Sciences (SEPS), North South University
-        </div>
-        <p class="hero-summary-text">
-          In the era of Industrial Revolution 4.0 (IR 4.0), Embedded Systems, Microprocessors, Internet of Things (IoT), and Blockchain technologies are the backbone of automation, healthcare, smart cities, and digital security. MESIL positions North South University as a producer and national leader in hardware-led engineering and deep-tech innovation.
-        </p>
-        <div class="hero-actions-group">
-          <a href="#faculty" class="btn-academic btn-academic-primary">
-            Founding Faculty Team
-          </a>
-          <a href="#infrastructure" class="btn-academic btn-academic-outline">
-            Infrastructure & Budget
-          </a>
-          <a href="#students" class="btn-academic btn-academic-outline">
-            Student Achievements (Appendix I)
-          </a>
-        </div>
-      </div>
-
-      <!-- Hero Summary Card -->
-      <div class="hero-meta-panel">
-        <div class="panel-header">
-          <h3 class="panel-title">Institutional Overview</h3>
-          <div class="panel-doc-meta">DOC ID: NSU-ECE-MESIL-2025</div>
-        </div>
-        <div class="panel-data-row">
-          <span class="panel-label">Institution</span>
-          <span class="panel-val">North South University</span>
-        </div>
-        <div class="panel-data-row">
-          <span class="panel-label">Department</span>
-          <span class="panel-val">Electrical & Computer Engineering</span>
-        </div>
-        <div class="panel-data-row">
-          <span class="panel-label">Core Faculty</span>
-          <span class="panel-val">5 Members (ECE)</span>
-        </div>
-        <div class="panel-data-row">
-          <span class="panel-label">Proposed Seed Fund</span>
-          <span class="panel-val">3,168,000 BDT</span>
-        </div>
-        <div class="panel-data-row">
-          <span class="panel-label">Industry Partners</span>
-          <span class="panel-val">Siliconova, NSL, Ulkasemi, Walton</span>
-        </div>
-        <div class="panel-data-row">
-          <span class="panel-label">Architecture</span>
-          <span class="panel-val">Micro-Frontends & Jamstack</span>
-        </div>
-      </div>
+  <!-- Hero Academic Portal Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <span class="portal-tag">Research & Engineering Excellence</span>
+      <h1 class="page-title">Microprocessor, Embedded Systems, and IoT Lab (MESIL)</h1>
+      <p class="page-lead">
+        Department of Electrical and Computer Engineering (ECE), School of Engineering & Physical Sciences (SEPS), North South University.
+      </p>
+      <p style="color: var(--text-muted); max-width: 900px; margin-top: 14px; line-height: 1.7;">
+        In the era of Industrial Revolution 4.0 (IR 4.0), Embedded Systems, Microprocessors, Internet of Things (IoT), and Blockchain technologies are the foundation of smart automation, healthcare, resilient cities, and cyber-physical security. MESIL serves as an academic and innovation hub bridging deep-tech research with real-world industry applications.
+      </p>
     </div>
   </section>
 
-  <!-- Institutional Metrics Bar -->
+  <!-- Metrics Bar -->
   <section class="metrics-strip">
     <div class="container metrics-grid">
       <div class="metric-cell">
@@ -171,144 +112,120 @@
       </div>
       <div class="metric-cell">
         <div class="metric-figure">18</div>
-        <div class="metric-title">Global Placements</div>
+        <div class="metric-title">Documented Scholars</div>
       </div>
     </div>
   </section>
 
-  <!-- Main Content Sections (Micro-Frontend Mounts) -->
-  <main>
-    <!-- Section 5.1: Faculty Leadership Mount -->
-    <section class="academic-section" id="faculty">
-      <div class="container" id="mfe-faculty-mount">
-        <!-- Hydrated by modules/faculty-mfe.js -->
-      </div>
-    </section>
-
-    <!-- Section 4: Objectives & Research Pillars Mount -->
-    <section class="academic-section" id="research">
-      <div class="container" id="mfe-research-mount">
-        <!-- Hydrated by modules/research-mfe.js -->
-      </div>
-    </section>
-
-    <!-- Section 5.3 & 5.4: Projects & Collaborations Mount -->
-    <section class="academic-section" id="projects">
-      <div class="container" id="mfe-projects-mount">
-        <!-- Hydrated by modules/projects-mfe.js -->
-      </div>
-    </section>
-
-    <!-- Section 6: Infrastructure & Proposed Budget Mount -->
-    <section class="academic-section" id="infrastructure">
-      <div class="container" id="mfe-infrastructure-mount">
-        <!-- Hydrated by modules/infrastructure-mfe.js -->
-      </div>
-    </section>
-
-    <!-- Appendix I: Student Research Achievements Mount -->
-    <section class="academic-section" id="students">
-      <div class="container" id="mfe-students-mount">
-        <!-- Hydrated by modules/students-mfe.js -->
-      </div>
-    </section>
-
-    <!-- Section 6.3 & 9: Governance & Funding Strategy Mount -->
-    <section class="academic-section" id="governance">
-      <div class="container" id="mfe-governance-mount">
-        <!-- Hydrated by modules/governance-mfe.js -->
-      </div>
-    </section>
-
-    <!-- Contact & Institutional Inquiries -->
-    <section class="academic-section" id="contact">
-      <div class="container">
-        <div class="section-badge-wrapper">
-          <span class="institutional-badge">Section 10 // Administrative Communication</span>
-        </div>
-        <h2 class="academic-heading">Institutional Inquiries & Industry Collaboration</h2>
-        <p class="academic-subheading">
-          Direct inquiries regarding graduate assistantships, research collaborations, industry MoUs, or seed fund administration
+  <!-- Separate Section Landing Portal -->
+  <main class="academic-section">
+    <div class="container">
+      <div style="border-bottom: 2px solid var(--border-color); padding-bottom: 14px; margin-bottom: 28px;">
+        <h2 style="font-family: var(--font-serif); font-size: 1.8rem;">Explore Laboratory Sections</h2>
+        <p style="color: var(--text-dim); font-size: 0.95rem;">
+          Navigate to dedicated section landing pages for detailed faculty profiles, technical research thrusts, ongoing industrial projects, laboratory facilities, and student research achievements.
         </p>
-
-        <div class="inquiry-grid">
-          <div class="academic-card">
-            <h3 class="card-section-title">Departmental Office Details</h3>
-            <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">
-              <strong>Microprocessor, Embedded Systems, and IoT Lab (MESIL)</strong><br>
-              Department of Electrical and Computer Engineering (ECE)<br>
-              School of Engineering & Physical Sciences (SEPS)<br>
-              North South University<br>
-              Plot 15, Block B, Bashundhara R/A, Dhaka-1229, Bangladesh
-            </p>
-            <div style="border-top: 1px solid var(--border-color); padding-top: 16px;">
-              <div style="font-size: 0.85rem; color: var(--text-dim);">Departmental Email:</div>
-              <strong style="color: var(--nsu-blue); font-size: 0.95rem;">ece.mesil@northsouth.edu</strong>
-            </div>
-          </div>
-
-          <div class="academic-card">
-            <h3 class="card-section-title">Submit Communication</h3>
-            <form id="academic-inquiry-form">
-              <div class="form-group">
-                <label class="form-label" for="inq-name">Full Name</label>
-                <input type="text" id="inq-name" name="name" class="form-input" placeholder="e.g., Prof. / Dr. / Engr. John Doe" required>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="inq-affiliation">Institution / Organization</label>
-                <input type="text" id="inq-affiliation" name="affiliation" class="form-input" placeholder="e.g., North South University / Siliconova" required>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="inq-type">Nature of Inquiry</label>
-                <select id="inq-type" name="type" class="form-select">
-                  <option value="Industry Partnership / MoU">Industry Partnership / MoU</option>
-                  <option value="Graduate Research Assistantship (GRA)">Graduate Research Assistantship (GRA)</option>
-                  <option value="Capstone Hardware Project">Capstone Hardware Project Mentorship</option>
-                  <option value="Inter-Departmental Joint Proposal">Inter-Departmental Joint Proposal</option>
-                  <option value="General Academic Inquiry">General Academic Inquiry</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="inq-details">Inquiry Details</label>
-                <textarea id="inq-details" name="details" class="form-textarea" rows="4" placeholder="Specify your proposal, research domain, or collaboration scope..." required></textarea>
-              </div>
-
-              <button type="submit" class="btn-academic btn-academic-primary" style="width: 100%;">
-                Submit Communication
-              </button>
-            </form>
-          </div>
-        </div>
       </div>
-    </section>
+
+      <div class="portal-grid">
+        <!-- Faculty Portal -->
+        <a href="faculty.html" class="portal-card">
+          <div>
+            <span class="portal-tag">Section 01 // Personnel</span>
+            <h3 class="portal-title">Faculty Leadership</h3>
+            <p class="portal-desc">
+              Meet the core ECE faculty team leading MESIL research, curricula upgrades, and international academic collaborations.
+            </p>
+          </div>
+          <span class="portal-action-link">Open Faculty Section &rarr;</span>
+        </a>
+
+        <!-- Research Portal -->
+        <a href="research.html" class="portal-card">
+          <div>
+            <span class="portal-tag">Section 02 // Research</span>
+            <h3 class="portal-title">Research Thrusts & SDGs</h3>
+            <p class="portal-desc">
+              Explore the 5 core technical pillars (MCU, Embedded Systems, IoT, Blockchain, Smart Grid), multidisciplinary initiatives, and UN SDG alignment.
+            </p>
+          </div>
+          <span class="portal-action-link">Open Research Section &rarr;</span>
+        </a>
+
+        <!-- Projects Portal -->
+        <a href="projects.html" class="portal-card">
+          <div>
+            <span class="portal-tag">Section 03 // Prototypes</span>
+            <h3 class="portal-title">Ongoing Projects & Linkages</h3>
+            <p class="portal-desc">
+              Discover active prototypes, automotive STM32 APIs, drone AI vision, and industrial collaborations with Siliconova, Walton, NSL, and Ulkasemi.
+            </p>
+          </div>
+          <span class="portal-action-link">Open Projects Section &rarr;</span>
+        </a>
+
+        <!-- Infrastructure Portal -->
+        <a href="infrastructure.html" class="portal-card">
+          <div>
+            <span class="portal-tag">Section 04 // Facilities</span>
+            <h3 class="portal-title">Laboratory Infrastructure</h3>
+            <p class="portal-desc">
+              Review available high-performance workstations, Jetson edge AI modules, microcontroller test benches, and sensor instrumentation.
+            </p>
+          </div>
+          <span class="portal-action-link">Open Infrastructure Section &rarr;</span>
+        </a>
+
+        <!-- Student Outcomes Portal -->
+        <a href="students.html" class="portal-card">
+          <div>
+            <span class="portal-tag">Section 05 // Human Capital</span>
+            <h3 class="portal-title">Student Outcomes & Alumni</h3>
+            <p class="portal-desc">
+              Interactive database of student researchers and alumni placed at top institutions (UBC, Sheffield, Howard, Amazon, UIUC, etc.) with fast search.
+            </p>
+          </div>
+          <span class="portal-action-link">Open Student Outcomes &rarr;</span>
+        </a>
+
+        <!-- Contact Portal -->
+        <a href="contact.html" class="portal-card">
+          <div>
+            <span class="portal-tag">Section 06 // Communications</span>
+            <h3 class="portal-title">Contact & Collaboration</h3>
+            <p class="portal-desc">
+              Reach the laboratory management regarding graduate assistantships, industry MoUs, capstone mentorship, and joint research.
+            </p>
+          </div>
+          <span class="portal-action-link">Open Contact Section &rarr;</span>
+        </a>
+      </div>
+    </div>
   </main>
 
-  <!-- Institutional Footer -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px;">
-            <img src="assets/mesil-logo.png" alt="MESIL Logo" style="height: 48px; background: #ffffff; padding: 4px; border-radius: 4px;">
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+            <img src="assets/mesil-logo.png" alt="MESIL Logo" style="height: 44px; background: #ffffff; padding: 4px; border-radius: 4px;">
             <span style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700;">MESIL</span>
           </div>
           <p style="color: rgba(255, 255, 255, 0.75); font-size: 0.88rem; line-height: 1.6; max-width: 440px;">
-            Microprocessor, Embedded Systems, and IoT Lab (MESIL) is established under the Department of Electrical and Computer Engineering at North South University to drive hardware-led innovation, embedded systems education, and deep-tech entrepreneurship.
+            Microprocessor, Embedded Systems, and IoT Lab (MESIL) is established under the Department of Electrical and Computer Engineering at North South University to drive hardware-led innovation and deep-tech entrepreneurship.
           </p>
         </div>
 
         <div class="footer-col">
-          <h4>Proposal Sections</h4>
+          <h4>Section Pages</h4>
           <ul class="footer-links">
-            <li><a href="#faculty">5.1 Founding Faculty Team</a></li>
-            <li><a href="#research">4. Objectives & Pillars</a></li>
-            <li><a href="#projects">5.3 Ongoing Projects</a></li>
-            <li><a href="#infrastructure">6. Infrastructure & Table 6.2</a></li>
-            <li><a href="#students">Appendix I: Student Outcomes</a></li>
-            <li><a href="#governance">6.3 Governance & Strategy</a></li>
+            <li><a href="faculty.html">Faculty Leadership</a></li>
+            <li><a href="research.html">Research & SDGs</a></li>
+            <li><a href="projects.html">Projects & Linkages</a></li>
+            <li><a href="infrastructure.html">Infrastructure & Facilities</a></li>
+            <li><a href="students.html">Student Outcomes & Alumni</a></li>
+            <li><a href="contact.html">Institutional Contact</a></li>
           </ul>
         </div>
 
@@ -318,23 +235,34 @@
             <li><a href="http://www.northsouth.edu" target="_blank" rel="noopener noreferrer">North South University Home</a></li>
             <li><a href="http://ece.northsouth.edu" target="_blank" rel="noopener noreferrer">Department of ECE</a></li>
             <li><a href="http://seps.northsouth.edu" target="_blank" rel="noopener noreferrer">School of Engineering (SEPS)</a></li>
-            <li><a href="#contact">Administrative Contact</a></li>
+            <li><a href="contact.html">Administrative Office</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom-bar">
         <div>
-          &copy; July 2025 – Present. Microprocessor, Embedded Systems, and IoT Lab (MESIL), Department of ECE, North South University. All rights reserved.
+          &copy; July 2025 – Present. Microprocessor, Embedded Systems, and IoT Lab (MESIL), Department of ECE, North South University.
         </div>
         <div>
-          Architected with Micro-Frontends & Jamstack Composable Principles.
+          Architected with Jamstack & Composable Micro-Frontends.
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Micro-Frontend Core Orchestrator -->
-  <script type="module" src="modules/core.js"></script>
+  <script>
+    // Theme toggle & mobile menu controller
+    document.getElementById('theme-toggle-btn')?.addEventListener('click', () => {
+      const cur = document.documentElement.getAttribute('data-theme') || 'light';
+      const next = cur === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('mesil-theme', next);
+    });
+
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+      document.getElementById('mobile-nav-drawer')?.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
