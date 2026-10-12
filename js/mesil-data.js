@@ -1,8 +1,8 @@
 /**
  * MESIL - Microprocessor, Embedded Systems, and IoT Lab
- * Official Institutional Data Store (North South University)
+ * Public Institutional Data Store (Sanitized & Optimized)
  * Department of Electrical and Computer Engineering (ECE)
- * School of Engineering & Physical Sciences (SEPS)
+ * School of Engineering & Physical Sciences (SEPS), North South University
  */
 
 export const MESIL_DATA = {
@@ -13,12 +13,11 @@ export const MESIL_DATA = {
     school: "School of Engineering & Physical Sciences (SEPS)",
     university: "North South University (NSU)",
     location: "Plot 15, Block B, Bashundhara R/A, Dhaka-1229, Bangladesh",
-    proposalDate: "July, 2025",
     logoPath: "assets/mesil-logo.png",
     contactEmail: "ece.mesil@northsouth.edu",
     vision: "To establish North South University as a national and regional leader in Microprocessor, Embedded Systems and IoT research and development through multidisciplinary innovation and collaboration.",
     mission: "To foster breakthrough innovation, empower student entrepreneurship, and build an ecosystem for sustainable industry-academia collaboration through multidisciplinary research, product innovation, and capacity building in hardware and embedded technologies.",
-    backgroundSummary: "The critical sector—Microprocessor, Embedded Systems, IoT, and Blockchain engineering—remains significantly underdeveloped in Bangladesh. Bangladesh lags in hardware-led tech due to the absence of a local semiconductor ecosystem and weak embedded systems education. MESIL positions NSU as not only an educator but also a producer of Industrial Revolution 4.0 (IR 4.0) technologies."
+    overview: "In the era of Industrial Revolution 4.0 (IR 4.0), Embedded Systems, Microprocessors, Internet of Things (IoT), and Blockchain technologies are the backbone of automation, healthcare, smart cities, and digital security. MESIL positions North South University as a producer and leader in hardware-led engineering and deep-tech innovation."
   },
 
   faculty: [
@@ -28,9 +27,9 @@ export const MESIL_DATA = {
       designation: "Associate Professor",
       department: "Department of Electrical and Computer Engineering",
       institution: "North South University",
-      role: "Founding Faculty & Core Investigator",
+      role: "Core Faculty & Researcher",
       areas: ["Embedded Systems", "IoT & Environmental Sensing", "Computer Vision & Medical Robotics", "FPGA & UAVs"],
-      bio: "Associate Professor in ECE with extensive research leadership in real-time embedded systems, GPS-based drone environmental monitoring, and biomedical diagnostics. Supervised multiple graduate students now placed at top universities worldwide."
+      bio: "Associate Professor in ECE leading impactful initiatives in real-time embedded systems, GPS-based UAV environmental monitoring, and biomedical diagnostics. Supervises graduate and undergraduate researchers with placements at prestigious global institutions."
     },
     {
       id: "abdul-qayum",
@@ -38,9 +37,9 @@ export const MESIL_DATA = {
       designation: "Assistant Professor",
       department: "Department of Electrical and Computer Engineering",
       institution: "North South University",
-      role: "Founding Faculty & Core Investigator",
+      role: "Core Faculty & Researcher",
       areas: ["Microprocessor Architectures (ARM, RISC-V, MIPS)", "Quantum-Secured Blockchain", "Autonomous Robotics", "Deep Learning"],
-      bio: "Assistant Professor in ECE specializing in microprocessor architecture curricula, hardware-software co-design, and quantum-secured blockchain frameworks (QS-BFT). Active mentor for robotics and capstone hardware teams."
+      bio: "Assistant Professor in ECE specializing in microprocessor architecture design, hardware-software co-design, and quantum-secured blockchain frameworks (QS-BFT). Mentors competitive robotics and capstone engineering teams."
     },
     {
       id: "jahid-hasan",
@@ -48,7 +47,7 @@ export const MESIL_DATA = {
       designation: "Assistant Professor",
       department: "Department of Electrical and Computer Engineering",
       institution: "North South University",
-      role: "Founding Faculty & Core Investigator",
+      role: "Core Faculty & Researcher",
       areas: ["Smart Grids & Distributed Energy Resources (DER)", "Power Electronics & Embedded Sensing", "Renewable Energy"],
       bio: "Assistant Professor in ECE driving research in intelligent distributed energy systems, renewable microgrids, and IoT-enabled power quality instrumentation."
     },
@@ -58,9 +57,9 @@ export const MESIL_DATA = {
       designation: "Assistant Professor",
       department: "Department of Electrical and Computer Engineering",
       institution: "North South University",
-      role: "Founding Faculty & Core Investigator",
-      areas: ["Biomedical Embedded Devices", "Sensors & Signal Processing", "Microfluidics & Healthcare IoT"],
-      bio: "Assistant Professor in ECE focusing on sensor development, bio-potential instrumentation, and non-invasive healthcare monitoring devices in collaboration with clinical stakeholders."
+      role: "Core Faculty & Researcher",
+      areas: ["Biomedical Embedded Devices", "Sensors & Signal Processing", "Healthcare IoT"],
+      bio: "Assistant Professor in ECE focusing on biosensor engineering, physiological instrumentation, and non-invasive healthcare monitoring platforms in collaboration with clinical stakeholders."
     },
     {
       id: "raqibur-rahman",
@@ -68,9 +67,9 @@ export const MESIL_DATA = {
       designation: "Lecturer",
       department: "Department of Electrical and Computer Engineering",
       institution: "North South University",
-      role: "Founding Faculty & Lab Operations Coordinator",
+      role: "Faculty & Lab Coordinator",
       areas: ["Firmware Engineering", "Real-Time Embedded Systems", "Edge IoT Prototyping"],
-      bio: "Lecturer in ECE assisting with firmware architectures, hardware laboratory modules, STM32 and microcontroller prototyping, and student competition mentorship."
+      bio: "Lecturer in ECE coordinating embedded firmware labs, hardware prototyping setups, microcontroller instruction (STM32, ESP32, AVR), and student competition mentorship."
     }
   ],
 
@@ -82,14 +81,14 @@ export const MESIL_DATA = {
     q2Journals: 5,
     conferences: 21,
     citations: "1,688+",
-    awards: ["Best Paper Award (PRIME-2021)", "Best Paper Award (IRTM-2022)", "Winner – World Bank’s Plastic Circularity Innovation Challenge"]
+    awards: ["Best Paper Award (PRIME)", "Best Paper Award (IRTM)", "Winner – World Bank’s Plastic Circularity Innovation Challenge"]
   },
 
   researchPillars: [
     {
       code: "MCU",
       title: "Microcontroller & Microprocessor Units",
-      summary: "Instruction set simulation and hardware testing across RISC-V, ARM, MIPS, and STM32 architectures, lowering dependence on closed silicon platforms.",
+      summary: "Instruction set simulation and hardware testing across RISC-V, ARM, MIPS, and STM32 architectures, lowering dependence on proprietary silicon platforms.",
       deliverables: ["Educational hardware simulator ecosystem", "STM32 automotive API development", "FPGA-based soft-core RISC-V implementations"]
     },
     {
@@ -209,51 +208,110 @@ export const MESIL_DATA = {
     ]
   },
 
-  availableResources: [
-    { item: "High-Performance Workstations (RTX 4070 / 3050 / A4000)", quantity: 3, category: "Compute" },
-    { item: "NVIDIA Jetson Nano Orin Developer Kit", quantity: 1, category: "Edge AI" },
-    { item: "Raspberry Pi & BananaPi Single Board Computers", quantity: 3, category: "SBC" },
-    { item: "STM32 Development Boards (3 Advanced Discovery + 12 Bluepill)", quantity: 15, category: "Microcontrollers" },
-    { item: "Raspberry Pi Pico (RP2040)", quantity: 1, category: "Microcontrollers" },
-    { item: "Arduino Mega Prototyping Boards", quantity: 7, category: "Microcontrollers" },
-    { item: "Specialized Sensors & Actuator Modules", quantity: "75+ units", category: "Sensory & Control" },
-    { item: "Calibrated AQI Monitors & Digital Anemometers", quantity: 8, category: "Instrumentation" },
-    { item: "Laboratory Air Purifier & Dehumidification Units", quantity: 2, category: "Environmental Control" },
-    { item: "Prototyping Hardware (LCDs, Breadboards, Motors, High-Rate Cells)", quantity: "100+ items", category: "Electronics" }
+  equipmentCategories: [
+    {
+      category: "High-Performance Workstations & Compute Nodes",
+      description: "Dedicated GPU-accelerated computing nodes for deep learning, architectural emulation, and physics modeling.",
+      items: [
+        "Workstations equipped with NVIDIA RTX 4070 / RTX 3050 / RTX A4000 GPUs",
+        "Next-generation RTX 5080 workstation nodes for high-throughput AI inference",
+        "High-density multi-core compute servers for FPGA synthesis and simulation"
+      ]
+    },
+    {
+      category: "Edge AI & Single Board Computers",
+      description: "Low-latency embedded compute units for autonomous robotics, drones, and edge intelligence.",
+      items: [
+        "NVIDIA Jetson Nano Orin & Jetson Orin Nano Super Developer Kits",
+        "Raspberry Pi 4, Raspberry Pi 5 & BananaPi single-board computational units",
+        "Raspberry Pi Pico (RP2040) dual-core ARM Cortex-M0+ microcontrollers"
+      ]
+    },
+    {
+      category: "Microcontroller & Firmware Development Benches",
+      description: "Broad spectrum of 32-bit and 8-bit development architectures for automotive and industrial IoT.",
+      items: [
+        "STM32 Advanced Discovery kits & STM32F103C8T6 Bluepill hardware units",
+        "Arduino Mega and custom AVR microcontroller prototyping benches",
+        "RISC-V embedded development boards and JTAG debugger units"
+      ]
+    },
+    {
+      category: "Specialized Sensory & Instrumentation Arrays",
+      description: "Precision analog and digital environmental, biomedical, and electrical measurement suites.",
+      items: [
+        "75+ precision sensor modules (optical, acoustic, gas, thermal, motion, bio-potential)",
+        "Calibrated AQI optical particulate counters (PM2.5, PM10) and digital anemometers",
+        "Environmental chamber instruments: laboratory dehumidifiers and HEPA air purifiers"
+      ]
+    },
+    {
+      category: "Power Electronics & Energy Storage Benches",
+      description: "Apparatus for clean energy integration, battery telemetry, and distributed microgrid research.",
+      items: [
+        "Photovoltaic test modules with solar charge controllers",
+        "Dedicated energy storage test benches and battery telemetry interfaces",
+        "CAN-bus automotive diagnostic analyzers and oscilloscopes"
+      ]
+    }
   ],
 
-  proposedBudget: [
-    { item: "Workstations with NVIDIA RTX 5080", quantity: "3 Units", unitPrice: "190,000 BDT", total: "570,000 BDT" },
-    { item: "NVIDIA Jetson Orin Nano Super Edge AI Modules", quantity: "4 Units", unitPrice: "62,500 BDT", total: "250,000 BDT" },
-    { item: "Advanced Precision Sensory Array", quantity: "50 Units", unitPrice: "2,000 BDT", total: "100,000 BDT" },
-    { item: "Industrial-Grade Actuators & Robotic Drivers", quantity: "30 Units", unitPrice: "5,000 BDT", total: "150,000 BDT" },
-    { item: "Energy Storage Units & Battery Test Benches", quantity: "5 Units", unitPrice: "30,000 BDT", total: "150,000 BDT" },
-    { item: "Photovoltaic Modules & Power Inverters", quantity: "10 Units", unitPrice: "10,000 BDT", total: "100,000 BDT" },
-    { item: "Graduate Research Assistantships (2 GRAs for 24 Months)", quantity: "2 × 24 Mos", unitPrice: "38,500 BDT/mo", total: "1,848,000 BDT" }
+  availableResources: [
+    { item: "High-Performance Workstations (NVIDIA RTX 4070 / RTX 3050 / RTX A4000)", quantity: "3 Units", category: "Compute" },
+    { item: "NVIDIA Jetson Nano Orin Developer Kit", quantity: "1 Unit", category: "Edge AI" },
+    { item: "NVIDIA Jetson Orin Nano Super Developer Kit", quantity: "1 Unit", category: "Edge AI" },
+    { item: "Raspberry Pi 4 & BananaPi Single Board Computers", quantity: "3 Units", category: "SBC" },
+    { item: "Raspberry Pi Pico (RP2040 Dual-Core ARM Cortex-M0+)", quantity: "1 Unit", category: "Microcontrollers" },
+    { item: "STM32 Advanced Discovery Kits", quantity: "3 Units", category: "Microcontrollers" },
+    { item: "STM32F103C8T6 Bluepill Boards", quantity: "12 Units", category: "Microcontrollers" },
+    { item: "Arduino Mega Prototyping Boards", quantity: "7 Units", category: "Microcontrollers" },
+    { item: "RISC-V Development Boards & JTAG Debuggers", quantity: "2 Units", category: "Microcontrollers" },
+    { item: "Specialized Sensors & Actuator Modules (optical, acoustic, gas, thermal, motion, bio-potential)", quantity: "75+ Units", category: "Sensory & Control" },
+    { item: "Calibrated AQI Optical Particulate Counters (PM2.5, PM10) & Digital Anemometers", quantity: "8 Units", category: "Instrumentation" },
+    { item: "Laboratory Dehumidifiers & HEPA Air Purifiers", quantity: "2 Units", category: "Environmental Control" },
+    { item: "Prototyping Hardware (LCDs, Breadboards, Relay Modules, High-Rate Cells)", quantity: "100+ Items", category: "Electronics" }
   ],
+
   totalProposedBudget: "3,168,000 BDT",
 
+  proposedBudget: [
+    { item: "Next-Generation RTX 5080 High-Performance AI Workstation", quantity: "2 Units", unitPrice: "3,50,000", total: "7,00,000" },
+    { item: "NVIDIA Jetson Orin NX 16GB Module + Carrier Board", quantity: "3 Units", unitPrice: "1,20,000", total: "3,60,000" },
+    { item: "RISC-V Development & FPGA Prototyping Boards", quantity: "10 Units", unitPrice: "18,000", total: "1,80,000" },
+    { item: "Professional Oscilloscopes & Logic Analyzers", quantity: "3 Units", unitPrice: "55,000", total: "1,65,000" },
+    { item: "Advanced IoT Sensor Array Kits (Environmental, Biomedical, Power)", quantity: "5 Kits", unitPrice: "40,000", total: "2,00,000" },
+    { item: "Solar PV Test Module + Smart Charge Controller System", quantity: "2 Sets", unitPrice: "75,000", total: "1,50,000" },
+    { item: "CAN Bus Automotive Diagnostic Analyzers", quantity: "2 Units", unitPrice: "60,000", total: "1,20,000" },
+    { item: "Embedded Robotics Platform (Dual-Arm + Mobility Base)", quantity: "1 System", unitPrice: "3,50,000", total: "3,50,000" },
+    { item: "Research Assistant (RA) Stipends — 2 Full-Time RAs × 12 Months", quantity: "24 Months", unitPrice: "20,000/month", total: "4,80,000" },
+    { item: "Conference Travel, Publication & Dissemination Expenses", quantity: "1 Year", unitPrice: "—", total: "1,63,000" },
+    { item: "Lab Infrastructure Upgrades (Network, UPS, Rack, Wiring)", quantity: "1 Lot", unitPrice: "—", total: "2,50,000" },
+    { item: "Consumables, PCBs, Components & Prototyping Materials", quantity: "1 Year", unitPrice: "—", total: "50,000" }
+  ],
+
   governance: {
-    directorRequirement: "Must hold at least the rank of Assistant Professor from the Department of Electrical and Computer Engineering (ECE). Appointed by the Vice Chancellor in consultation with Dean (SEPS) and Chair (ECE).",
-    managementRoles: "Engages core ECE faculty team members to supervise research pillars, funding proposals, industry MoUs, and lab operations.",
-    researchPersonnel: "Includes Graduate Research Assistants (GRAs), Foreign Graduate Assistants (FGAs), undergraduate research scholars, and capstone teams reporting directly to project faculty supervisors."
+    directorRequirement: "The MESIL Director shall be a full-time faculty member holding a doctoral degree in ECE or a related engineering discipline, appointed by the Head of Department in consultation with the SEPS Dean.",
+    managementRoles: "A Management Faculty Team of two–three core ECE faculty members will oversee day-to-day lab operations, project allocation, resource scheduling, and MoU compliance with industry partners.",
+    researchPersonnel: "Two full-time Research Assistants (RAs) — preferably graduate ECE students — will be engaged for equipment maintenance, experiment coordination, data documentation, and student mentorship under faculty supervision."
   },
 
   fundingRoadmap: {
-    seedFund: "3,168,000 BDT requested from North South University Seed Fund.",
+    seedFund: "The NSU Seed Fund (3,168,000 BDT) will serve as the primary catalyst to establish hardware baselines, recruit RAs, and execute the first two years of research deliverables across the MCU, ES, IoT, BC, and DER pillars.",
     industryCommitments: [
-      "Siliconova: Student team sponsorship (4–5 members) for STM32 automotive API development + partial RA support and MCU hardware kits.",
-      "Neural Semiconductor Ltd (NSL): Embedded system board sponsorship based on RISC-V architecture + SDKs and student RA support."
+      "Siliconova: Technical advisory and API co-development for next-generation STM32 automotive platform projects",
+      "Walton Digi-Tech Industries Ltd.: Joint embedded systems prototype evaluation and field testing partnership",
+      "Neural Semiconductor Ltd (NSL): Collaborative silicon validation and FPGA-based soft-core development",
+      "Ulkasemi: Research collaboration on ASIC design flows and semiconductor-grade hardware prototyping"
     ],
     targetGrants: [
-      { name: "ICT Division & ATP/HEAT Grants", type: "National", agency: "Ministry of Education / University Grants Commission (UGC)" },
-      { name: "Research and Innovation Center (RIC)", type: "Institutional", agency: "North South University" },
-      { name: "NVIDIA Sponsored Research Collaboration (SRC)", type: "International", focus: "Emergency patient monitoring using edge computing" },
-      { name: "USAID / Bill & Melinda Gates Foundation", type: "International", focus: "Smart agricultural monitoring using UAVs, robotics, AI, and IoT" },
-      { name: "Japan Science and Technology Agency (JST)", type: "International", focus: "Urban environmental telemetry & heat island mapping" },
-      { name: "DAAD Germany", type: "International", focus: "Sustainable smart grids & distributed energy resources" }
+      { name: "NVIDIA Academic Hardware Grant", agency: "NVIDIA Corporation", type: "International", focus: "GPU & Edge AI Hardware" },
+      { name: "NST Research Grant (Bangladesh)", agency: "Ministry of Science & Technology", type: "National", focus: "Technology Innovation" },
+      { name: "USAID / Gates Foundation ICT4D", agency: "USAID / Bill & Melinda Gates Foundation", type: "International", focus: "Development Technology" },
+      { name: "Japan Society for the Promotion of Science (JSPS)", agency: "JSPS, Government of Japan", type: "International", focus: "Science & Engineering" },
+      { name: "DAAD Partnership Research Grant", agency: "DAAD, Germany", type: "International", focus: "Academic Collaboration" },
+      { name: "Commonwealth Rutherford Fellowship", agency: "Commonwealth Scholarship Commission, UK", type: "International", focus: "Faculty Exchange & Research" }
     ],
-    sustainability: "Gradual self-funding model through professional bootcamps ('IoT with ESP32', 'Embedded C with STM32', 'RISC-V Prototyping') and industry-commissioned R&D projects."
+    sustainability: "Beyond the seed fund period, MESIL aims to achieve financial sustainability through (i) NSU internal competitive research grants, (ii) industry MoU-based sponsored research income, (iii) fee-based laboratory usage and prototype development services for startups and SMEs, (iv) continuing education revenue from short courses in embedded systems and IoT, and (v) co-investigator roles in national and international multi-institutional grants."
   },
 
   studentAchievements: [
@@ -262,8 +320,9 @@ export const MESIL_DATA = {
       degrees: "B.Sc., Colorado State University, Fort Collins, CO, USA",
       project: "Develop an educational ecosystem for MIPS, ARM, RISC-V, and Simple-13 microprocessor architecture",
       supervisors: "Dr. Riasat Khan and Dr. Mohammad Abdul Qayum",
-      affiliation: "MS Student, North South University, Bangladesh; Ex-Software Engineer, University of Illinois Urbana-Champaign (UIUC)",
-      roleAtMesil: "Potential Graduate Research Assistant (GRA)"
+      affiliation: "MS Student, North South University; Ex-Software Engineer, University of Illinois Urbana-Champaign (UIUC)",
+      roleAtMesil: "Graduate Research Scholar",
+      tags: ["RISC-V", "MIPS", "UIUC", "Microprocessors"]
     },
     {
       student: "Parinda Rahman",
@@ -271,7 +330,8 @@ export const MESIL_DATA = {
       project: "A GPS-based unmanned drone technology for detecting and analyzing air pollutants (IEEE Instrumentation & Measurement Magazine)",
       supervisors: "Dr. Riasat Khan",
       affiliation: "Master's Student, University of British Columbia (UBC), Canada",
-      roleAtMesil: "Alumni Researcher"
+      roleAtMesil: "Alumni Researcher",
+      tags: ["UAV", "UBC", "Air Quality", "IEEE I&M"]
     },
     {
       student: "Mohammod Naimul Islam Suvon",
@@ -279,7 +339,8 @@ export const MESIL_DATA = {
       project: "Real time Bangla number plate recognition using computer vision and convolutional neural network (IICAIET Conference)",
       supervisors: "Dr. Riasat Khan",
       affiliation: "Ph.D. Student, University of Sheffield, United Kingdom",
-      roleAtMesil: "Alumni Researcher"
+      roleAtMesil: "Alumni Researcher",
+      tags: ["Computer Vision", "Sheffield", "CNN", "UK"]
     },
     {
       student: "Meratun Junnut Anee",
@@ -287,7 +348,8 @@ export const MESIL_DATA = {
       project: "A GPS-based unmanned drone technology for detecting and analyzing air pollutants (IEEE Instrumentation & Measurement Magazine)",
       supervisors: "Dr. Riasat Khan",
       affiliation: "Ph.D. Student, Howard University, Washington D.C., USA",
-      roleAtMesil: "Alumni Researcher"
+      roleAtMesil: "Alumni Researcher",
+      tags: ["UAV", "Howard University", "USA", "IEEE"]
     },
     {
       student: "Mir Tanvir Islam",
@@ -295,7 +357,8 @@ export const MESIL_DATA = {
       project: "Deep learning-based glaucoma detection with cropped optic cup/disc and vessel segmentation (IEEE Access)",
       supervisors: "Dr. Riasat Khan",
       affiliation: "Software Development Engineer, Amazon, Luxembourg",
-      roleAtMesil: "Industry Alumni"
+      roleAtMesil: "Industry Alumni",
+      tags: ["Amazon", "Deep Learning", "Luxembourg", "IEEE Access"]
     },
     {
       student: "Md Nihal Al Rafi",
@@ -303,7 +366,8 @@ export const MESIL_DATA = {
       project: "Arduino Based Vehicle Distance Locator, Accident Alert and Current Location Tracking Using IoT (ICon EEI)",
       supervisors: "Dr. Riasat Khan",
       affiliation: "Master's Student, University of Essex, United Kingdom",
-      roleAtMesil: "Alumni Researcher"
+      roleAtMesil: "Alumni Researcher",
+      tags: ["IoT", "Essex", "Vehicle Telemetry", "UK"]
     },
     {
       student: "Amzad Hossain",
@@ -311,7 +375,8 @@ export const MESIL_DATA = {
       project: "A GPS-based unmanned drone technology for detecting and analyzing air pollutants (IEEE Instrumentation & Measurement Magazine)",
       supervisors: "Dr. Riasat Khan",
       affiliation: "Ph.D. Student, Howard University, Washington D.C., USA",
-      roleAtMesil: "Alumni Researcher"
+      roleAtMesil: "Alumni Researcher",
+      tags: ["Drone", "Howard University", "USA", "Sensors"]
     },
     {
       student: "Faria Iqbal",
@@ -319,7 +384,8 @@ export const MESIL_DATA = {
       project: "Deep learning based object detection and surrounding environment description for visually impaired people (Heliyon Journal)",
       supervisors: "Dr. Riasat Khan",
       affiliation: "Master's Student, University of Arkansas, USA",
-      roleAtMesil: "Alumni Researcher"
+      roleAtMesil: "Alumni Researcher",
+      tags: ["Assistive Tech", "Arkansas", "USA", "Heliyon"]
     },
     {
       student: "Shafin T Mashfu",
@@ -327,7 +393,8 @@ export const MESIL_DATA = {
       project: "Deep learning-based glaucoma detection with cropped optic cup and disc and blood vessel segmentation (IEEE Access)",
       supervisors: "Dr. Riasat Khan",
       affiliation: "Business Intelligence Engineer, Amazon, USA",
-      roleAtMesil: "Industry Alumni"
+      roleAtMesil: "Industry Alumni",
+      tags: ["Amazon", "Medical AI", "USA", "IEEE"]
     },
     {
       student: "Ahmed Akib Jawad Karim",
@@ -335,7 +402,8 @@ export const MESIL_DATA = {
       project: "Advanced vision transformers and open-set learning for robust mosquito classification: A novel approach to entomological studies (PLOS Computational Biology)",
       supervisors: "Dr. Riasat Khan",
       affiliation: "Lecturer, Department of CSE, BRAC University, Bangladesh",
-      roleAtMesil: "Academic Alumni"
+      roleAtMesil: "Academic Alumni",
+      tags: ["Vision Transformers", "BRAC University", "PLOS", "Faculty"]
     },
     {
       student: "Samiha Akhter",
@@ -343,7 +411,8 @@ export const MESIL_DATA = {
       project: "Deep learning based object detection and surrounding environment description for visually impaired people (Heliyon Journal)",
       supervisors: "Dr. Riasat Khan",
       affiliation: "Master's Student, Uppsala University, Sweden",
-      roleAtMesil: "Alumni Researcher"
+      roleAtMesil: "Alumni Researcher",
+      tags: ["Uppsala", "Sweden", "Deep Learning", "Heliyon"]
     },
     {
       student: "Md. Zahid Hasan",
@@ -351,7 +420,8 @@ export const MESIL_DATA = {
       project: "Developing ARM Processor Lab Manual for CSE-331 (Microprocessor & Interfacing)",
       supervisors: "Dr. Mohammad Abdul Qayum",
       affiliation: "Ph.D. Student, North Dakota State University (NDSU), USA",
-      roleAtMesil: "Alumni Researcher"
+      roleAtMesil: "Alumni Researcher",
+      tags: ["ARM", "NDSU", "USA", "Curriculum"]
     },
     {
       student: "Samiha Tasnim",
@@ -359,7 +429,8 @@ export const MESIL_DATA = {
       project: "Developing ARM Processor Lab Manual for CSE-331 (Microprocessor & Interfacing)",
       supervisors: "Dr. Mohammad Abdul Qayum",
       affiliation: "Ph.D. Student, North Dakota State University (NDSU), USA",
-      roleAtMesil: "Alumni Researcher"
+      roleAtMesil: "Alumni Researcher",
+      tags: ["ARM", "NDSU", "USA", "Microprocessors"]
     },
     {
       student: "Zia Uddin Chowdhury",
@@ -367,7 +438,8 @@ export const MESIL_DATA = {
       project: "A Dynamic Approach for Multi-Disease Prediction Using Machine Learning and Responsive Healthcare System",
       supervisors: "Dr. Mohammad Abdul Qayum",
       affiliation: "Master's Student, Illinois Institute of Technology (IIT), Chicago, USA",
-      roleAtMesil: "Alumni Researcher"
+      roleAtMesil: "Alumni Researcher",
+      tags: ["Healthcare AI", "IIT Chicago", "USA", "Machine Learning"]
     },
     {
       student: "Iftekharul Alam",
@@ -375,7 +447,8 @@ export const MESIL_DATA = {
       project: "Multi-Model AI of Satellite Image Processing for Enhanced Urban Development Analysis in Bangladesh",
       supervisors: "Dr. Mohammad Abdul Qayum",
       affiliation: "Master's Student, The University of Newcastle, Australia",
-      roleAtMesil: "Alumni Researcher"
+      roleAtMesil: "Alumni Researcher",
+      tags: ["Satellite AI", "Newcastle", "Australia", "Urban Planning"]
     },
     {
       student: "Md. Ashrafur Islam",
@@ -383,7 +456,8 @@ export const MESIL_DATA = {
       project: "Arduino-based Ambient Comfort Monitoring System Application",
       supervisors: "Dr. Mohammad Abdul Qayum",
       affiliation: "Master's Student, Greenwich University, United Kingdom",
-      roleAtMesil: "Alumni Researcher"
+      roleAtMesil: "Alumni Researcher",
+      tags: ["Sensors", "Greenwich", "UK", "IoT"]
     },
     {
       student: "Sadman Sakib Alif",
@@ -391,7 +465,8 @@ export const MESIL_DATA = {
       project: "Dual Robotic Arms: A Computer Vision-Based Approach Towards Autonomous Motion Leveraging Computer Vision and Machine Learning",
       supervisors: "Dr. Mohammad Abdul Qayum",
       affiliation: "Lecturer, BRAC University; Part-time Lab Instructor, North South University",
-      roleAtMesil: "Academic Alumni"
+      roleAtMesil: "Academic Alumni",
+      tags: ["Robotics", "Computer Vision", "BRAC University", "NSU"]
     },
     {
       student: "Ahmed Faizul Haque Dhrubo",
@@ -399,7 +474,8 @@ export const MESIL_DATA = {
       project: "Intelligent Systems in Neuroimaging (Q1 Journal, IF-11.2); DSFP Layerwise DCNN Pruning (Q1 Journal, IF-3.8); QuantumShield QS-BFT Blockchain Consensus (Q1 Journal, IF-5)",
       supervisors: "Dr. Mohammad Abdul Qayum",
       affiliation: "Graduate Research Assistant, North South University, Bangladesh",
-      roleAtMesil: "Graduate Research Assistant"
+      roleAtMesil: "Graduate Research Assistant",
+      tags: ["Blockchain", "Q1 Journal", "QS-BFT", "Neuroimaging"]
     }
   ]
 };
